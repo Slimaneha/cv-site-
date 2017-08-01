@@ -1,10 +1,12 @@
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
+
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -16,6 +18,7 @@ html {
     line-height: 1.4;
 }
 
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -26,13 +29,14 @@ html {
 
 ::-moz-selection {
     background: #b3d4fc;
-    text-shadow: none;
+    text-shadow: ne;
 }
 
 ::selection {
     background: #b3d4fc;
-    text-shadow: none;
+    text-shadow: ne;
 }
+
 
 /*
  * A better looking default horizontal rule
@@ -46,6 +50,7 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
+
 
 /*
  * Remove the gap between audio, canvas, iframes,
@@ -62,6 +67,7 @@ video {
     vertical-align: middle;
 }
 
+
 /*
  * Remove default fieldset styles.
  */
@@ -72,6 +78,7 @@ fieldset {
     padding: 0;
 }
 
+
 /*
  * Allow only vertical resizing of textareas.
  */
@@ -79,6 +86,7 @@ fieldset {
 textarea {
     resize: vertical;
 }
+
 
 /* ==========================================================================
    Browser Upgrade Prompt
@@ -91,41 +99,272 @@ textarea {
     padding: 0.2em 0;
 }
 
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
+body{
+    background-image: url(../img/papier.jpg)
+}
+/* Rélges type marges  */
+
+.m-t-1 {
+    margin-top: 3em;
+}
+
+.m-t {
+    margin-top: 2em;
+}
+
+.m-l {
+    margin-left: 2em;
+}
+
+.m-r {
+    margin-right: 2em;
+}
+
+.m-b {
+    margin-bottom: 2em;
+}
+
+
+/*Releges type text */
+
+t-centre {
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Zilla Slab', serif;
+}
+
+
+/* Fin Régles text */
+
+#navbar {
+    text-align: center;
+   background-color: #ffffff;
+    opacity: 0.4;
+    
+}
+
+#navbar a {
+    color: black;
+    margin-left: 2px;
+}
+
+
+/*  Start of Rules Csss*/
+#color{
+    background-image: url(../img/papier2.jpg);
+
+    color:white;
+}
+
+.card  {
+    height: 260px;
+   
+}
+
+.card {
+    width: 100%;
+    margin-top: 2em;
+}
+
+.cart  p {
+    font-family: 'Inconsolata', mospace;
+}
+
+nav {
+    color: orange;
+    font-family: 'Zilla Slab', serif;
+}
+
+.gauche,
+.droite {
+    width: 40%;
+}
+
+
+/*Start of rules index.html*/
+
+.cv {
+    color: white;
+    background-color: #222;
+}
+
+.projets {
+    height: 50%;
+    width: 50%;
+    background-color: orange;
+}
+
+.jumbotron {
+    background-color: #222;
+    color: white;
+    padding-bottom: 5em;
+}
+
+
+.btn .btn-outline-success{
+    color: black;
+    
+    border: 1px solid black;
+}
+
+
+
+/*annimation*/
+
+.wit{
+   
+    margin-top: 2em;
+     width: 200px;
+     height: 50px;
+    
+}
+
+.carousel .slide{
+    height: 300px;
+}
+
+#block{
+    text-align: center;
+    margin-top: 5em;
+} 
+
+.card img {
+    animation-name:images; 
+    animation-duration: 5s ; 
+}
 
 
 
 
+@keyframes images{
+    1% {
+        width: 0px;
+        height: 0px
+    }
+
+    to{
+        width: 150px;
+        height: 150px; 
+    }
+}
+
+.card h2 , .card p {
+    animation-name: text;
+    animation-duration:  5s ; 
+} 
 
 
 
+@keyframes text {
+
+    1% {
+        font-size: 0px;
+    }
+
+    to {
+        font-size: 15px;
+    }
+} 
+
+ .annime {
+     animation-name:test; 
+     animation-duration:5s; 
+      transition: width 2s, height 2s;
+     
+
+ } 
 
 
 
+ @keyframes test{
+
+    5%{
+        width: 5%;
+        font-size: 0px;
+        display: block;
+    }
+   10%{
+        width: 10%;
+    }
+    15%{
+        width: 15%;
+    }
+    20%{
+        width: 20%;
+       
+    }
+    25%{
+        width: 25%;
+        
+        
+    }
+    30%{ 
+        width: 30%;
+        
+    }
+    40%{
+        width: 40%;
+        
+    }
+    50%{
+        width: 50%;
+    }
+    55%{
+        width: 55%;
+        font-size: 1px;
+    }
 
 
+    60%{
+        width: 60%;
+        font-size: 5px;
+    }
 
+    70%{
+        width: 70%;
+    }
+    80%{
+        width: 80%;
+    }
+    90%{
+        width: 90%;
+    }
 
+to {
+        width: 100%;
+    }
+     
 
+ }
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
 
 /*
  * Hide visually and from screen readers
  */
 
 .hidden {
-    display: none !important;
+    display: ne !important;
 }
+
 
 /*
  * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ * http://sok.ca/archives/html_and_css/hiding-content-for-accessibility
  */
 
 .visuallyhidden {
@@ -139,10 +378,11 @@ textarea {
     width: 1px;
 }
 
+
 /*
  * Extends the .visuallyhidden class to allow the element
  * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
+ * https://www.drupal.org/de/897638
  */
 
 .visuallyhidden.focusable:active,
@@ -155,6 +395,7 @@ textarea {
     width: auto;
 }
 
+
 /*
  * Hide visually and from screen readers, but maintain layout
  */
@@ -162,6 +403,7 @@ textarea {
 .invisible {
     visibility: hidden;
 }
+
 
 /*
  * Clearfix: contain floats
@@ -177,13 +419,16 @@ textarea {
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
 
 .clearfix:after {
     clear: both;
 }
+
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -196,11 +441,12 @@ textarea {
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
+
 
 /* ==========================================================================
    Print styles.
@@ -215,66 +461,55 @@ textarea {
     *:first-letter,
     *:first-line {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+        color: #000 !important;
+        /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
+        box-shadow: ne !important;
+        text-shadow: ne !important;
     }
-
     a,
     a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
-
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
         content: "";
     }
-
     pre,
     blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
     /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
     thead {
         display: table-header-group;
     }
-
     tr,
     img {
         page-break-inside: avoid;
     }
-
     img {
         max-width: 100% !important;
     }
-
     p,
     h2,
     h3 {
         orphans: 3;
         widows: 3;
     }
-
     h2,
     h3 {
         page-break-after: avoid;
